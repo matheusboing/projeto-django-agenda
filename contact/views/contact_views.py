@@ -20,7 +20,7 @@ def index(request):
     return render(
         request,
         'contact/index.html',
-        context,
+        context
     )
 
 def search(request):
@@ -52,7 +52,7 @@ def search(request):
     return render(
         request,
         'contact/index.html',
-        context,
+        context
     )
 
 def contact(request, contact_id):
@@ -63,11 +63,11 @@ def contact(request, contact_id):
         show=True)
 
     context = {
-        'contact': single_contact,
+        'contact': single_contact
     }
     
     return render(
         request,
         'contact/contact.html',
-        context,
+        context
     )

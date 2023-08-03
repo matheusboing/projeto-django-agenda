@@ -22,18 +22,18 @@ def create(request):
         return render(
             request,
             'contact/create.html',
-            context,
+            context
         )
 
     context = {
         'form': ContactForm(),
-        'form_action': form_action,
+        'form_action': form_action
     }
     
     return render(
         request,
         'contact/create.html',
-        context,
+        context
     )
 
 def update(request, contact_id):
@@ -55,18 +55,18 @@ def update(request, contact_id):
         return render(
             request,
             'contact/create.html',
-            context,
+            context
         )
 
     context = {
         'form': ContactForm(instance=contact),
-        'form_action': form_action,
+        'form_action': form_action
     }
     
     return render(
         request,
         'contact/create.html',
-        context,
+        context
     )
 
 def delete(request, contact_id):
@@ -84,6 +84,6 @@ def delete(request, contact_id):
         'contact/contact.html',
         {
             'contact': contact,
-            'confirmation': confirmation,
+            'confirmation': confirmation
         }
     )
